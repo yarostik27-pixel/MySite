@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- Версія 1: Базова структура -->
     <header class="header">
         <div class="logo">RentCars</div>
         <nav>
@@ -23,14 +22,45 @@
         <button class="header-btn">Увійти</button>
     </header>
 
+    <!-- HERO з кнопками CTA -->
     <section class="hero" id="home">
         <div class="hero-text">
             <h1>Знайди, забронюй та орендуй авто легко</h1>
-            <p>Найкращий сервіс оренди автомобілів в Україні.</p>
+            <p>Найкращий сервіс оренди автомобілів в Україні. Швидко, зручно та безпечно.</p>
+            <div class="hero-buttons">
+                <button>Google Play</button>
+                <button>App Store</button>
+            </div>
         </div>
         <div class="hero-image">
             <img src="photo.png" alt="BMW">
         </div>
+    </section>
+
+    <!-- SEARCH BOX -->
+    <section class="search-box">
+        <div class="search-item">
+            <label>Місто</label>
+            <select>
+                <option>Київ</option>
+                <option>Львів</option>
+                <option>Одеса</option>
+            </select>
+        </div>
+        <div class="search-item">
+            <label>Дата</label>
+            <input type="date">
+        </div>
+        <div class="search-item">
+            <label>Тип авто</label>
+            <select>
+                <option>Усі</option>
+                <option>Спорткар</option>
+                <option>Седан</option>
+                <option>SUV</option>
+            </select>
+        </div>
+        <button class="search-btn">Пошук</button>
     </section>
 
 </body>
