@@ -126,7 +126,6 @@ button, select, input{
     100%{ transform:translateY(0); }
 }
 
-/* SEARCH BOX - нова секція */
 .search-box{
     width:85%;
     margin:auto;
@@ -165,10 +164,106 @@ button, select, input{
     cursor:pointer;
 }
 
+.steps{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.steps h2{
+    margin-bottom:50px;
+    font-size:clamp(30px, 4vw, 42px);
+}
+
+.steps-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.step-card{
+    width:min(100%, 300px);
+    background:#f7f9ff;
+    padding:40px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.step-card:hover{
+    transform:translateY(-10px);
+}
+
+.step-icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+/* ABOUT - нова секція зі слайдером */
+.about{
+    padding:80px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.about-image{
+    width:38%;
+}
+
+.about-slider{
+    position:relative;
+    aspect-ratio:4 / 5;
+    max-width:380px;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.about-slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    opacity:0;
+    animation:aboutSlider 50s infinite;
+}
+
+.about-slide:nth-child(1){ animation-delay:0s; }
+.about-slide:nth-child(2){ animation-delay:10s; }
+.about-slide:nth-child(3){ animation-delay:20s; }
+.about-slide:nth-child(4){ animation-delay:30s; }
+.about-slide:nth-child(5){ animation-delay:40s; }
+
+@keyframes aboutSlider{
+    0%{ opacity:0; }
+    3%{ opacity:1; }
+    17%{ opacity:1; }
+    20%{ opacity:0; }
+    100%{ opacity:0; }
+}
+
+.about-text{
+    width:50%;
+}
+
+.about-text h2{
+    font-size:clamp(30px, 4vw, 48px);
+    margin-bottom:30px;
+}
+
+.feature{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
 @media(max-width:1100px){
     .header{ padding:22px 6%; }
     .hero, .about{ flex-direction:column; text-align:center; }
-    .hero-text, .hero-image{ width:100%; }
+    .hero-text, .hero-image, .about-image, .about-text{ width:100%; }
     .search-box{ width:88%; align-items:stretch; flex-wrap:wrap; }
     .search-btn{ flex:1 1 180px; }
 }
@@ -184,6 +279,9 @@ button, select, input{
     .hero-buttons button{ flex:1 1 150px; max-width:220px; }
     .search-box{ width:90%; flex-direction:column; gap:20px; padding:24px; }
     .search-btn{ width:100%; }
+    .steps, .about{ padding:60px 5%; }
+    .steps-container{ gap:22px; }
+    .step-card, .review-card{ width:100%; }
 }
 
 @media(max-width:480px){
@@ -195,4 +293,6 @@ button, select, input{
     .hero-buttons{ flex-direction:column; }
     .hero-buttons button{ max-width:none; width:100%; }
     .search-box{ width:92%; padding:20px; border-radius:16px; }
+    .steps, .about{ padding:45px 4%; }
+    .step-card, .review-card{ padding:28px 22px; border-radius:16px; }
 }
