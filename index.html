@@ -4,150 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RentCars UA</title>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <header class="header">
-        <div class="logo">RentCars</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#cars">Авто</a></li>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#reviews">Відгуки</a></li>
-            </ul>
-        </nav>
-        <button class="header-btn">Увійти</button>
-    </header>
+<body bgcolor="#d3e3fd">
 
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Знайди, забронюй та орендуй авто легко</h1>
-            <p>Найкращий сервіс оренди автомобілів в Україні. Швидко, зручно та безпечно.</p>
-            <div class="hero-buttons">
-                <button>Google Play</button>
-                <button>App Store</button>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="photo.png" alt="BMW">
-        </div>
-    </section>
+<header class="header">
 
-    <section class="search-box">
-        <div class="search-item">
-            <label>Місто</label>
-            <select>
-                <option>Київ</option>
-                <option>Львів</option>
-                <option>Одеса</option>
-            </select>
-        </div>
-        <div class="search-item">
-            <label>Дата</label>
-            <input type="date">
-        </div>
-        <div class="search-item">
-            <label>Тип авто</label>
-            <select>
-                <option>Усі</option>
-                <option>Спорткар</option>
-                <option>Седан</option>
-                <option>SUV</option>
-            </select>
-        </div>
-        <button class="search-btn">Пошук</button>
-    </section>
+    <div class="logo">RentCars</div>
 
-    <section class="steps">
-        <h2>Орендуй авто у 3 прості кроки</h2>
-        <div class="steps-container">
-            <div class="step-card">
-                <div class="step-icon">📍</div>
-                <h3>Обери локацію</h3>
-                <p>Вкажіть місто отримання авто</p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon">📅</div>
-                <h3>Вибери дату</h3>
-                <p>Оберіть дату оренди</p>
-            </div>
-            <div class="step-card">
-                <div class="step-icon">🚘</div>
-                <h3>Забронюй авто</h3>
-                <p>Підтвердьте бронювання</p>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#cars">Авто</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+        </ul>
+    </nav>
 
-    <section class="about" id="about">
-        <div class="about-image about-slider">
-            <img src="photo.jpg" alt="Koenigsegg Agera-R" class="about-slide">
-            <img src="photo.png" alt="Ferrari Roma Mansory" class="about-slide">
-            <img src="photo.jpg" alt="McLaren 720S" class="about-slide">
-            <img src="photo.png" alt="BMW F900-R" class="about-slide">
-            <img src="photo.jpg" alt="Land Rover Defender" class="about-slide">
-        </div>
-        <div class="about-text">
-            <h2>Ми пропонуємо найкращий сервіс оренди</h2>
-            <div class="feature">✔️ Преміальна підтримка клієнтів</div>
-            <div class="feature">✔️ Досвідчені водії</div>
-            <div class="feature">✔️ Підтримка 24/7</div>
-            <div class="feature">✔️ Швидке бронювання</div>
-        </div>
-    </section>
+    <button class="header-btn">Увійти</button>
 
-    <!-- CARS - нова секція з картками автомобілів -->
-    <section class="cars" id="cars">
-        <h2>Популярні автомобілі</h2>
-        <div class="cars-container">
-            <div class="car-card">
-                <img src="photo.png" alt="Porsche 911">
-                <h3>Porsche 911</h3>
-                <p>23000 грн / день</p>
-                <button>Орендувати</button>
-            </div>
-            <div class="car-card">
-                <img src="photo.jpg" alt="BMW M4">
-                <h3>BMW M4</h3>
-                <p>25000 грн / день</p>
-                <button>Орендувати</button>
-            </div>
-            <div class="car-card">
-                <img src="photo.png" alt="Nissan GT-R">
-                <h3>Nissan GT-R</h3>
-                <p>15000 грн / день</p>
-                <button>Орендувати</button>
-            </div>
-            <div class="car-card">
-                <img src="photo.jpg" alt="Mercedes AMG GT">
-                <h3>Mercedes AMG GT 63s</h3>
-                <p>30000 грн / день</p>
-                <button>Орендувати</button>
-            </div>
-        </div>
-    </section>
+</header>
 
-    <!-- REVIEWS - нова секція відгуків -->
-    <section class="reviews" id="reviews">
-        <h2>Що кажуть наші клієнти?</h2>
-        <div class="reviews-container">
-            <div class="review-card">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Анна">
-                <h3>Анна</h3>
-                <p>⭐️⭐️⭐️⭐️⭐️</p>
-                <span>Дуже швидкий сервіс та чудові автомобілі.</span>
-            </div>
-            <div class="review-card">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Олександр">
-                <h3>Олександр</h3>
-                <p>⭐️⭐️⭐️⭐️⭐️</p>
-                <span>Найкращий сервіс оренди в Україні.</span>
-            </div>
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <h1>Знайди, забронюй та орендуй авто легко</h1>
+
+        <p>Найкращий сервіс оренди автомобілів в Україні. Швидко, зручно та безпечно.</p>
+
+        <div class="hero-buttons">
+
+            <button onclick="openGoogle()">Google Play</button>
+            <button onclick="openApple()">App Store</button>
+
         </div>
-    </section>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img src="photo.png" alt="BMW">
+
+    </div>
+
+</section>
+
+<!-- SEARCH -->
+<section class="search-box">
+
+    <div class="search-item">
+        <label>Місто</label>
+        <select>
+            <option>Київ</option>
+            <option>Львів</option>
+            <option>Одеса</option>
+        </select>
+    </div>
+
+    <div class="search-item">
+        <label>Дата</label>
+        <input type="date">
+    </div>
+
+    <div class="search-item">
+        <label>Тип авто</label>
+        <select>
+            <option>Усі</option>
+            <option>Спорткар</option>
+            <option>Седан</option>
+            <option>SUV</option>
+        </select>
+    </div>
+
+    <button class="search-btn">Пошук</button>
+
+</section>
+
+<!-- STEPS -->
+<section class="steps">
+
+    <h2>Орендуй авто у 3 прості кроки</h2>
+
+    <div class="steps-container">
+
+        <div class="step-card">
+            <div class="step-icon">📍</div>
+            <h3>Обери локацію</h3>
+            <p>Вкажіть місто отримання авто</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-icon">📅</div>
+            <h3>Вибери дату</h3>
+            <p>Оберіть дату оренди</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-icon">🚘</div>
+            <h3>Забронюй авто</h3>
+            <p>Підтвердьте бронювання</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-image about-slider">
+        <img src="assets/about-slide-1.jpg" alt="Koenigsegg Agera-R" class="about-slide">
+        <img src="assets/about-slide-2.jpg" alt="Ferrari Roma Mansory" class="about-slide">
+        <img src="assets/about-slide-3.jpg" alt="McLaren 720S Silverstone" class="about-slide">
+        <img src="assets/about-slide-4.jpg" alt="BMW F900-R" class="about-slide">
+        <img src="assets/about-slide-5.jpg" alt="Land Rover Defender 110 V8" class="about-slide">
+    </div>
+
+    <div class="about-text">
+
+        <h2>Ми пропонуємо найкращий сервіс оренди</h2>
+
+        <div class="feature">✔️ Преміальна підтримка клієнтів</div>
+        <div class="feature">✔️ Досвідчені водії</div>
+        <div class="feature">✔️ Підтримка 24/7</div>
+        <div class="feature">✔️ Швидке бронювання</div>
+
+    </div>
+
+</section>
+
+<!-- CARS -->
+<section class="cars" id="cars">
+
+    <h2>Популярні автомобілі</h2>
+
+    <div class="cars-container">
+
+        <div class="car-card">
+            <img src="file:///C:/Фото/png-klev-club-k3mo-p-porshe-911-png-19.png">
+            <h3>Porsche 911</h3>
+            <p>23000 грн / день</p>
+            <button onclick="rentCar('Porsche 911')">Орендувати</button>
+        </div>
+
+        <div class="car-card">
+            <img src="file:///C:/Фото/079197f4d399b83687019efd8d3cd71a.jpg">
+            <h3>BMW M4</h3>
+            <p>25000 грн / день</p>
+            <button onclick="rentCar('BMW M4')">Орендувати</button>
+        </div>
+
+        <div class="car-card">
+            <img src="file:///C:/Фото/nissan-gt-r-nismo.jpg">
+            <h3>Nissan GT-R</h3>
+            <p>15000 грн / день</p>
+            <button onclick="rentCar('Nissan GT-R')">Орендувати</button>
+        </div>
+
+        <div class="car-card">
+            <img src="file:///C:/Фото/286294118cc66985c6ee9d732b51e46b.jpg">
+            <h3>Mercedes AMG GT 63s</h3>
+            <p>30000 грн / день</p>
+            <button onclick="rentCar('Mercedes AMG GT 63s')">Орендувати</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+
+    <h2>Що кажуть наші клієнти?</h2>
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <h3>Анна</h3>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <span>Дуже швидкий сервіс та чудові автомобілі.</span>
+        </div>
+
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <h3>Олександр</h3>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <span>Найкращий сервіс оренди в Україні.</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <h3>RentCars</h3>
+            <p>Київ, Україна</p>
+            <p>+380 99 123 45 67</p>
+        </div>
+
+        <div>
+            <h3>Навігація</h3>
+            <p>Головна</p>
+            <p>Авто</p>
+            <p>Контакти</p>
+        </div>
+
+        <div>
+            <h3>Соцмережі</h3>
+            <p>Instagram</p>
+            <p>Telegram</p>
+            <p>Facebook</p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+function openGoogle(){
+    alert("Відкривається Google Play");
+}
+
+function openApple(){
+    alert("Відкривається App Store");
+}
+
+function rentCar(car){
+    alert("Ви обрали: " + car);
+}
+</script>
 
 </body>
 </html>
